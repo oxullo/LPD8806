@@ -25,8 +25,9 @@ class LPD8806 {
     updateLength(uint16_t n);               // Change strip length
   uint16_t
     numPixels(void);
+  static uint32_t
+    Color(byte, byte, byte);
   uint32_t
-    Color(byte, byte, byte),
     getPixelColor(uint16_t n);
 
  private:
